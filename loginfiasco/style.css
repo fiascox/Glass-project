@@ -1,0 +1,600 @@
+@font-face {
+  src: url(fonts/IndieFlower-Regular.ttf);
+  font-family: indie;
+}
+
+@font-face {
+  src: url(fonts/Livvic-LightItalic.ttf);
+  font-family: livvic;
+}
+
+@font-face {
+  src: url(fonts/RobotoMono-Medium.ttf);
+  font-family: robot;
+}
+
+@font-face {
+  src: url(fonts/SairaStencilOne-Regular.ttf);
+  font-family: saira;
+}
+
+@font-face {
+  src: url(fonts/TurretRoad-Medium.ttf);
+  font-family: turret;
+}
+
+@font-face {
+  src: url(fonts/VollkornSC-Black.ttf);
+  font-family: voll;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient: linear-gradient(
+    70deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871,
+    #ffc75f,
+    #ffc75f
+  );
+  --textgradient: linear-gradient(45deg, #845ec2, black, #845ec2);
+}
+
+@keyframes bg {
+  0% {
+    background-position: center;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+body {
+  background-image: var(--gradient);
+  background-repeat: no-repeat;
+  background-size: 500%;
+  background-position: left;
+  animation: bg 3s infinite alternate ease-in-out;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.header {
+  width: fit-content;
+  text-align: center;
+
+  margin: 80px auto 50px auto;
+}
+
+.header h1 {
+  font-family: turret;
+  font-size: 30px;
+  background-image: var(--textgradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.username {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  margin: 0px auto 20px auto;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.username img {
+  height: 30px;
+}
+
+.username input {
+  outline: none;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  align-self: flex-end;
+  width: 70%;
+}
+
+.password {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  margin: 0px auto 20px auto;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.password img {
+  height: 30px;
+}
+
+.password input {
+  outline: none;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  align-self: flex-end;
+  width: 70%;
+}
+
+.contain {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  line-height: 35px;
+  position: relative;
+}
+
+.contain input {
+  display: none;
+}
+
+.contain label h3 {
+  display: none;
+}
+
+.contain h2 a {
+  font-size: 17px;
+  display: grid;
+  place-items: start;
+  text-align: right;
+}
+
+.login {
+  margin: 20px auto 0px auto;
+  width: 70%;
+
+  /* justify-content: center; */
+}
+
+.login .login-button button {
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  font-family: voll;
+  background-image: linear-gradient(
+    45deg,
+    palevioletred,
+    pink,
+    lightyellow,
+    lightcyan,
+    cyan,
+    lightyellow,
+    pink,
+    palevioletred
+  );
+  color: goldenrod;
+  border-radius: 5px;
+  background-size: 200%;
+  background-position: left;
+  border: none;
+  transition: 2s ease-in-out;
+}
+
+.login .login-button button:hover {
+  background-position: right;
+  transition: all 2s ease-in-out;
+}
+
+.login .or h2 {
+  margin: 20px auto 20px auto;
+  width: 15%;
+  text-align: center;
+  height: 40px;
+  background-color: palevioletred;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  border-radius: 50px;
+  color: white;
+}
+
+.sm {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sm .facebook {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+}
+
+.sm .facebook a button {
+  height: 20px;
+  border: none;
+  background-color: blue;
+  border-left: 1px solid whitesmoke;
+  padding: 3px 10px 10px 10px;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.sm .facebook a img {
+  height: 20px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.sm .twitter {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.sm .twitter a button {
+  height: 20px;
+  background-color: #1da1f2;
+  border: none;
+  border-left: 1px solid whitesmoke;
+  width: 100%;
+  padding: 2px 20px 15px 20px;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.sm .twitter a img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 20px;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer h2 {
+  font-size: 15px;
+  margin: 0px auto 10px auto;
+  width: 75%;
+  padding: 0;
+  text-align: center;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    width: fit-content;
+    text-align: center;
+
+    margin: 150px auto 60px auto;
+  }
+
+  .header h1 {
+    font-family: turret;
+    font-size: 50px;
+    background-image: var(--textgradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .username {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    margin: 10px auto 30px auto;
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+  }
+
+  .username img {
+    height: 40px;
+  }
+
+  .username input {
+    outline: none;
+    font-size: 30px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    align-self: flex-end;
+    width: 70%;
+  }
+
+  .password {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    margin: 10px auto 30px auto;
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+  }
+
+  .password img {
+    height: 40px;
+  }
+
+  .password input {
+    outline: none;
+    font-size: 30px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    align-self: flex-end;
+    width: 70%;
+  }
+
+  .contain {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 35px;
+  }
+
+  .contain input {
+    display: block;
+    align-self: center;
+    height: 15px;
+    width: 15px;
+  }
+
+  .contain label h3 {
+    font-size: 20px;
+    display: block;
+    padding-right: 50%;
+    width: 99%;
+    text-align: left;
+    padding-right: 25px;
+    padding-left: 5px;
+  }
+
+  .contain h2 a {
+    font-size: 20px;
+    display: grid;
+    place-items: start;
+    text-align: right;
+  }
+  .login {
+    margin: 30px auto 10px auto;
+    width: 70%;
+
+    /* justify-content: center; */
+  }
+
+  .login .login-button button {
+    width: 100%;
+    height: 55px;
+    font-size: 40px;
+    font-family: voll;
+    background-color: palevioletred;
+    color: goldenrod;
+    border-radius: 12px;
+    border: none;
+  }
+
+  .login .or h2 {
+    margin: 40px auto 40px auto;
+    width: 15%;
+    height: 60px;
+    background-color: palevioletred;
+    font-size: 30px;
+    border-radius: 60px;
+    color: white;
+  }
+
+  .sm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sm .facebook {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+  }
+
+  .sm .facebook a button {
+    font-size: 20px;
+    height: 30px;
+    border: none;
+    background-color: blue;
+    border-left: 1px solid whitesmoke;
+    padding: 3px 10px 10px 10px;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .sm .facebook a img {
+    height: 30px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .sm .twitter {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .sm .twitter a button {
+    font-size: 20px;
+    height: 30px;
+    background-color: #1da1f2;
+    border: none;
+    border-left: 1px solid whitesmoke;
+    width: 100%;
+    padding: 2px 20px 15px 20px;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .sm .twitter a img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 30px;
+    background-color: white;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  footer h2 {
+    font-size: 25px;
+    margin: 0px auto 10px auto;
+    width: 75%;
+    padding: 0;
+    text-align: center;
+  }
+
+  input::placeholder {
+    color: black;
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .header {
+    margin: 50px auto 30px auto;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .username {
+    width: 30%;
+    margin: 20px auto 15px auto;
+    padding-bottom: 10px;
+  }
+
+  .username input {
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .password {
+    width: 30%;
+    margin: 5px auto 15px auto;
+    padding-bottom: 10px;
+  }
+
+  .password input {
+    font-size: 20px;
+  }
+
+  .contain {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 35px;
+  }
+
+  .contain input {
+  }
+
+  .contain label h3 {
+    font-size: 15px;
+  }
+
+  .contain h2 a {
+    font-size: 15px;
+  }
+
+  .login {
+    margin: 15px auto 10px auto;
+    width: 30%;
+
+    /* justify-content: center; */
+  }
+
+  .login .login-button button {
+    height: 30px;
+    font-size: 25px;
+    outline: none;
+    color: goldenrod;
+  }
+
+  .login .or h2 {
+    margin: 20px auto 20px auto;
+    width: 10%;
+    height: 30px;
+    background-color: palevioletred;
+    font-size: 20px;
+    border-radius: 50px;
+    color: white;
+  }
+
+  .sm .facebook a button {
+    font-size: 15px;
+    height: 20px;
+    padding: 1px 10px 10px 10px;
+  }
+  .sm .facebook a img {
+    height: 20px;
+  }
+
+  .sm .twitter a button {
+    font-size: 15px;
+    height: 20px;
+    padding: 1px 20px 15px 20px;
+  }
+  .sm .twitter a img {
+    height: 20px;
+  }
+
+  footer {
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  input::placeholder {
+    color: black;
+    opacity: 0.6;
+  }
+}
