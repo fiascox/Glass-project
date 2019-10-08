@@ -53,6 +53,7 @@ body {
   text-align: center;
   margin-bottom: 0.8em;
   line-height: 1.5em;
+  letter-spacing: 1px;
 }
 
 .id input {
@@ -78,6 +79,7 @@ body {
 .cover-image h2 {
   margin-bottom: 0.8em;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .cover-image input[type="file"] {
@@ -91,6 +93,7 @@ body {
   justify-content: center;
   display: flex;
   flex-flow: column wrap;
+  letter-spacing: 1px;
 }
 
 .main-image h2 {
