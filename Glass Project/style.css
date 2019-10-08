@@ -56,10 +56,14 @@ body {
 }
 
 .id input {
+  padding-left: 6px;
   height: 2em;
   border: none;
-  outline: 1px dotted gray;
-  /* width: 50%; */
+  font-family: turret;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 1.5em;
+  outline: 1px solid gray;
   margin: 0 auto;
 }
 .cover-image {
