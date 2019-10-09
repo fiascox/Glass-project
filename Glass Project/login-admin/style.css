@@ -1,0 +1,302 @@
+@font-face {
+  src: url(fonts/IndieFlower-Regular.ttf);
+  font-family: indie;
+}
+
+@font-face {
+  src: url(fonts/Livvic-LightItalic.ttf);
+  font-family: livvic;
+}
+
+@font-face {
+  src: url(fonts/RobotoMono-Medium.ttf);
+  font-family: robot;
+}
+
+@font-face {
+  src: url(fonts/SairaStencilOne-Regular.ttf);
+  font-family: saira;
+}
+
+@font-face {
+  src: url(fonts/TurretRoad-Medium.ttf);
+  font-family: turret;
+}
+
+@font-face {
+  src: url(fonts/VollkornSC-Black.ttf);
+  font-family: voll;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+
+  margin: 80px auto 50px auto;
+}
+
+.header h1 {
+  font-family: robot;
+  font-size: 1.4em;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.username {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  margin: 0px auto 40px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.username img {
+  height: 30px;
+  align-self: flex-start;
+}
+
+.username input {
+  outline: none;
+  font-size: 1em;
+  border: none;
+  background: transparent;
+  text-align: center;
+  align-self: flex-end;
+  width: 70%;
+  font-family: voll;
+  font-weight: 900;
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+.password {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  margin: 0px auto 40px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.password img {
+  height: 30px;
+  align-self: flex-start;
+}
+
+.password input {
+  margin-left: 10px;
+  outline: none;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  align-self: flex-end;
+  width: 70%;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 0.4;
+}
+
+.login {
+  margin: 20px auto 0px auto;
+  width: 40%;
+}
+
+.login .login-button button {
+  width: 100%;
+  height: 25px;
+  font-size: 19px;
+  font-family: voll;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 1px 1px 3px #222;
+  outline-width: 1px solid white;
+  outline: none;
+}
+
+.login .login-button button:active {
+  box-shadow: 1px 1px 3px gray;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    width: fit-content;
+    text-align: center;
+
+    margin: 70px auto 60px auto;
+  }
+
+  .header h1 {
+    font-family: turret;
+    font-size: 30px;
+  }
+
+  .username {
+    display: flex;
+    flex-flow: row wrap;
+    width: 30%;
+    margin: 10px auto 30px auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+  }
+
+  .username img {
+    height: 30px;
+  }
+
+  .username input {
+    outline: none;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    align-self: flex-end;
+    width: 70%;
+  }
+
+  .password {
+    display: flex;
+    flex-flow: row wrap;
+    width: 30%;
+    margin: 10px auto 30px auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+  }
+
+  .password img {
+    height: 30px;
+  }
+
+  .password input {
+    outline: none;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    align-self: flex-end;
+    width: 70%;
+  }
+
+  .login {
+    margin: 30px auto 10px auto;
+    width: 20%;
+
+    /* justify-content: center; */
+  }
+
+  .login .login-button button {
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    font-family: voll;
+    border-radius: 3px;
+    border: none;
+  }
+
+  input::placeholder {
+    color: black;
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .admin-form {
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 9px 2px lightgray;
+    margin: 50px auto 30px;
+    padding-bottom: 100px;
+    width: 40%;
+  }
+
+  .header {
+    margin: 100px auto 50px auto;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .username {
+    width: 50%;
+    margin: 30px auto 15px auto;
+    padding-bottom: 10px;
+  }
+
+  .username img {
+    height: 29px;
+  }
+
+  .username input {
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .password {
+    width: 50%;
+    margin: 30px auto 30px auto;
+    padding-bottom: 10px;
+  }
+  .password img {
+    height: 29px;
+  }
+
+  .password input {
+    font-size: 20px;
+    width: 70%;
+  }
+  .login {
+    margin: 30px auto 10px auto;
+    width: 30%;
+    transition: none;
+
+    /* justify-content: center; */
+  }
+
+  .login .login-button button {
+    height: 25px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+  }
+
+  .login .login-button button:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.9);
+  }
+
+  .login .login-button button:active {
+    background-color: gray;
+  }
+
+  input::placeholder {
+    color: black;
+    opacity: 0.4;
+  }
+}
